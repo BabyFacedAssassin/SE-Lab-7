@@ -6,6 +6,8 @@ import random
 win = Tk()                          # creates the window
 win.title('ATM')
 win.geometry('460x390')             # sets the dimension of the window
+win.configure(bg='yellow')
+
 
 tim40 = font.Font(family='T16imes', size=40, weight='bold', slant='italic', underline=1)      # Font is an instance which contains parameter as
                                                                                             # family(the font style), size, weight(bold,normal)
@@ -23,6 +25,8 @@ def display_func():
     question_func.question_win.withdraw()
     display_win = Toplevel(win)
     display_win.geometry('460x390')
+    display_win.configure(bg='yellow')
+
     message = Message(display_win, text='\n\nYour transaction has been successful\n\nThank you for using our', font=cour20, fg='blue')
     message.pack()
     text = Label(display_win, text='MAYBANK', font=tim40, fg='red')
@@ -41,6 +45,7 @@ def question_func():
     withdrawal_func.withdrawal_win.withdraw()
     question_func.question_win = Toplevel(win)
     question_func.question_win.geometry('460x390')
+    question_func.question_win.configure(bg='yellow')
 
     bf = Frame(question_func.question_win)
     bf.pack(side=BOTTOM)
@@ -61,6 +66,7 @@ def withdrawal_func():
     option_func.option_win.withdraw()
     withdrawal_func.withdrawal_win = Toplevel(win)
     withdrawal_func.withdrawal_win.geometry('460x390')
+    withdrawal_func.withdrawal_win.configure(bg='yellow')
 
     enter_lbl = Label(withdrawal_func.withdrawal_win, text='\nPlease enter amount\n', font=cour20, fg='red')
     enter_lbl.pack()
@@ -139,6 +145,8 @@ def balance_func():
     option_func.option_win.withdraw()
     balance_win = Toplevel(win)
     balance_win.geometry('460x390')
+    balance_win.configure(bg='yellow')
+
     #balance_win.grab_set()
     balance = random.randrange(1000,1000000)
     message = Message(balance_win,text='\nYour transaction is successful\n\nAvailable Balance: '+str(balance)+'\n\nThank you for using our', font=cour20, fg='blue')
@@ -155,6 +163,8 @@ def message_func():
     change_pin_func.change_pin_win.withdraw()
     win2 = Toplevel(win)
     win2.geometry('460x390')
+    win2.configure(bg='yellow')
+
     message = Message(win2, text='\nYour transaction is successful\n\nYour PIN has been successfully changed\n\nThank you for using our', font=cour20, fg='blue')
     message.pack()
     text = Label(win2, text='MAYBANK', font=tim40, fg='red')
@@ -168,7 +178,9 @@ def message_func():
 def change_pin_func():
     option_func.option_win.withdraw()
     change_pin_func.change_pin_win = Toplevel(win)
-    change_pin_func.change_pin_win.geometry('460x420')
+    change_pin_func.change_pin_win.geometry('460x420')        
+    change_pin_func.change_pin_win.configure(bg='yellow')
+
 
     pin_lbl = Label(change_pin_func.change_pin_win, text='\nEnter new-PIN', font=cour15, fg='red')
     pin_lbl.pack()
@@ -246,6 +258,8 @@ def option_func():
     enter_pin.new_win.withdraw()                # check enter_pin() function for the functionality of .withdraw()
     option_func.option_win = Toplevel(win)
     option_func.option_win.geometry('460x390')
+    option_func.option_win.configure(bg='yellow')
+
    # option_win.grab_set()                       ## check enter_pin() function for the functionality of .grab_set()
 
     text_title = Label(option_func.option_win, text='\nATM', font=tim40)
@@ -277,6 +291,7 @@ def enter_pin():
 
     enter_pin.new_win = Toplevel(win)           # enter_pin.new_win makes the variable new_win as the member of the function object
     enter_pin.new_win.geometry('460x390')       # this helps us to use the variable even outside the function
+    enter_pin.new_win.configure(bg='yellow')
 
     #enter_pin.new_win.grab_set()               ## .grab.set() makes the associated window inactive temporarily until the active window is working
 
