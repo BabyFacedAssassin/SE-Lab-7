@@ -33,7 +33,7 @@ def display_func():
     text.pack()
 
     exit_button = Button(display_win, text='EXIT', font=cour15, fg='red', command=lambda: win.destroy())
-    exit_button.pack(side=BOTTOM, pady=10)
+    exit_button.pack(side=BOTTOM, pady=0)
 
 
 # window asking whether to show balance or not
@@ -54,10 +54,10 @@ def question_func():
     msg_box.pack()
 
     yes_btn = Button(bf, text='YES', font=cour15, fg='green', command=balance_func)
-    yes_btn.pack(side=LEFT, pady=10)
+    yes_btn.pack(side=LEFT, pady=0)
 
     no_btn = Button(bf, text=' NO ', font=cour15, fg='red', command=display_func)
-    no_btn.pack(pady=10, padx=10)
+    no_btn.pack(pady=0, padx=0)
 
 
 # withdrawing money window
@@ -92,10 +92,10 @@ def withdrawal_func():
     bf1.pack(side=BOTTOM)
 
     b1 = Button(bf1, text='1', font=cour15, command=lambda: money_entry.insert('end', '1'))
-    b1.pack(side=LEFT, pady=10)
+    b1.pack(side=LEFT, pady=0)
 
     b2 = Button(bf1, text='2', font=cour15, command=lambda: money_entry.insert('end', '2'))
-    b2.pack(side=LEFT, padx=10)
+    b2.pack(side=LEFT, padx=0)
 
     b3 = Button(bf1, text='3', font=cour15, command=lambda: money_entry.insert('end', '3'))
     b3.pack(side=LEFT)
@@ -104,16 +104,16 @@ def withdrawal_func():
     b4.pack(side=LEFT)
 
     b5 = Button(bf2, text='5', font=cour15, command=lambda: money_entry.insert('end', '5'))
-    b5.pack(side=LEFT, padx=10)
+    b5.pack(side=LEFT, padx=0)
 
     b6 = Button(bf2, text='6', font=cour15, command=lambda: money_entry.insert('end', '6'))
     b6.pack(side=LEFT)
 
     b7 = Button(bf3, text='7', font=cour15, command=lambda: money_entry.insert('end', '7'))
-    b7.pack(side=LEFT, pady=10)
+    b7.pack(side=LEFT, pady=0)
 
     b8 = Button(bf3, text='8', font=cour15, command=lambda: money_entry.insert('end', '8'))
-    b8.pack(side=LEFT, padx=10)
+    b8.pack(side=LEFT, padx=0)
 
     b9 = Button(bf3, text='9', font=cour15, command=lambda: money_entry.insert('end', '9'))
     b9.pack(side=LEFT)
@@ -122,16 +122,16 @@ def withdrawal_func():
     btn.pack(side=LEFT)
 
     b0 = Button(bf4, text='0', font=cour15, command=lambda: money_entry.insert('end', '0'))
-    b0.pack(side=LEFT, padx=10)
+    b0.pack(side=LEFT, padx=0)
 
     btn_ = Button(bf4, text=' ', font=cour15)
     btn_.pack(side=LEFT)
 
     enter_btn = Button(bf, text='ENTER', font=cour15, fg='green', command=question_func)
-    enter_btn.pack(side=LEFT, pady=10)
+    enter_btn.pack(side=LEFT, pady=0)
 
     clear_btn = Button(bf, text='CLEAR', font=cour15, fg='orange', command=lambda: money_entry.delete(1))
-    clear_btn.pack(side=LEFT, padx=10)
+    clear_btn.pack(side=LEFT, padx=0)
 
 
 # balance displaying window
@@ -155,7 +155,7 @@ def balance_func():
     text.pack()
 
     exit_button = Button(balance_win, text='EXIT', font=cour15, fg='red', command=lambda: win.destroy())
-    exit_button.pack(side=BOTTOM, pady=10)
+    exit_button.pack(side=BOTTOM, pady=0)
 
 
 # displays message after change has been changed
@@ -171,7 +171,7 @@ def message_func():
     text.pack()
 
     exit_button = Button(win2, text='EXIT', font=cour15, fg='red', command=lambda: win.destroy())
-    exit_button.pack(side=BOTTOM, pady=10)
+    exit_button.pack(side=BOTTOM, pady=0)
 
 
 # changing pin function
@@ -211,10 +211,10 @@ def change_pin_func():
     bf1.pack(side=BOTTOM)
 
     b1 = Button(bf1, text='1', font=cour15, command=lambda: [pin_entry.insert('end','1'), re_entry.insert('end','1')])
-    b1.pack(side=LEFT,pady=10)
+    b1.pack(side=LEFT,pady=0)
 
     b2 = Button(bf1, text='2', font=cour15, command=lambda: [pin_entry.insert('end','2'), re_entry.insert('end','2')])
-    b2.pack(side=LEFT, padx=10)
+    b2.pack(side=LEFT, padx=0)
 
     b3 = Button(bf1, text='3', font=cour15, command=lambda: [pin_entry.insert('end','3'), re_entry.insert('end','3')])
     b3.pack(side=LEFT)
@@ -223,16 +223,16 @@ def change_pin_func():
     b4.pack(side=LEFT)
 
     b5 = Button(bf2, text='5', font=cour15, command=lambda: [pin_entry.insert('end','5'), re_entry.insert('end','5')])
-    b5.pack(side=LEFT, padx=10)
+    b5.pack(side=LEFT, padx=0)
 
     b6 = Button(bf2, text='6', font=cour15, command=lambda: [pin_entry.insert('end','6'), re_entry.insert('end','6')])
     b6.pack(side=LEFT)
 
     b7 = Button(bf3, text='7', font=cour15, command=lambda: [pin_entry.insert('end','7'), re_entry.insert('end','7')])
-    b7.pack(side=LEFT,pady=10)
+    b7.pack(side=LEFT,pady=0)
 
     b8 = Button(bf3, text='8', font=cour15, command=lambda: [pin_entry.insert('end','8'), re_entry.insert('end','8')])
-    b8.pack(side=LEFT, padx=10)
+    b8.pack(side=LEFT, padx=0)
 
     b9 = Button(bf3, text='9', font=cour15, command=lambda: [pin_entry.insert('end','9'), re_entry.insert('end','9')])
     b9.pack(side=LEFT)
@@ -241,16 +241,16 @@ def change_pin_func():
     btn.pack(side=LEFT)
 
     b0 = Button(bf4, text='0', font=cour15, command=lambda: [pin_entry.insert('end','0'), re_entry.insert('end','0')])
-    b0.pack(side=LEFT, padx=10)                         # with help of list we can assign multiple functions for buttons
+    b0.pack(side=LEFT, padx=0)                         # with help of list we can assign multiple functions for buttons
 
     btn_ = Button(bf4, text=' ', font=cour15)
     btn_.pack(side=LEFT)
 
     enter_btn = Button(bf, text='ENTER', font=cour15, fg='green', command=message_func )
-    enter_btn.pack(side=LEFT, pady=10)
+    enter_btn.pack(side=LEFT, pady=0)
 
     clear_btn = Button(bf, text='CLEAR', font=cour15, fg='orange', command=lambda: [pin_entry.delete(0), re_entry.delete(0)])
-    clear_btn.pack(side=LEFT, padx=10)
+    clear_btn.pack(side=LEFT, padx=0)
 
 
 # options window
@@ -272,16 +272,16 @@ def option_func():
     lf.pack(side=LEFT)
 
     withdrawal_btn = Button(rf, text=' WITHDRAWAL ', font=cour15, fg='blue', command=withdrawal_func)
-    withdrawal_btn.pack(padx=40, pady=10)
+    withdrawal_btn.pack(padx=0, pady=0)
 
     balance_btn = Button(rf, text='BALANCE INQ', font=cour15, command=balance_func)
-    balance_btn.pack(padx=40, pady=10)
+    balance_btn.pack(padx=0, pady=0)
 
     change_pin_btn = Button(lf, text='CHANGE PIN', font=cour15, command=change_pin_func)
-    change_pin_btn.pack(padx=40, pady=10)
+    change_pin_btn.pack(padx=0, pady=0)
 
     exit_btn = Button(lf, text='   EXIT   ', font=cour15, fg='red', command=lambda: [option_func.option_win.destroy(), enter_pin.new_win.deiconify()])
-    exit_btn.pack(padx=40, pady=10)                                                                         # check enter_pin() function for the functionality of .deiconify()
+    exit_btn.pack(padx=0, pady=0)                                                                         # check enter_pin() function for the functionality of .deiconify()
 
 
 # enter_pin window
@@ -303,7 +303,7 @@ def enter_pin():
         entry_box.delete(0)                     # we have another function called delete which deletes text for the given range(.delete(0,'end') deletes the entire text
 
     lbl = Label(enter_pin.new_win, text='Enter your PIN',font=cour20,fg='red')
-    lbl.pack(pady=20)
+    lbl.pack(pady=0)
 
     entry_box = Entry(enter_pin.new_win, font=cour15, show='*', justify='center')  # show parameter display the input text as *(we can use any other element also)
     entry_box.pack()
@@ -330,10 +330,10 @@ def enter_pin():
     rf.pack(side=RIGHT)
 
     btn1 = Button(bf4,text='1',font=cour15, command=lambda:setInputText('1'))
-    btn1.pack(side=LEFT, pady=10)
+    btn1.pack(side=LEFT, pady=0)
 
     btn2 = Button(bf4, text='2', font=cour15, command=lambda:setInputText('2'))
-    btn2.pack(side=LEFT,padx=10)
+    btn2.pack(side=LEFT,padx=0)
 
     btn3 = Button(bf4, text='3', font=cour15, command=lambda:setInputText('3'))
     btn3.pack(side=LEFT)
@@ -342,16 +342,16 @@ def enter_pin():
     btn4.pack(side=LEFT)
 
     btn5 = Button(bf3, text='5', font=cour15, command=lambda:setInputText('5'))
-    btn5.pack(side=LEFT,padx=10)
+    btn5.pack(side=LEFT,padx=0)
 
     btn6 = Button(bf3, text='6', font=cour15, command=lambda:setInputText('6'))
     btn6.pack(side=LEFT)
 
     btn7 = Button(bf2, text='7', font=cour15, command=lambda:setInputText('7'))
-    btn7.pack(side=LEFT,pady=10)
+    btn7.pack(side=LEFT,pady=0)
 
     btn8 = Button(bf2, text='8', font=cour15, command=lambda:setInputText('8'))
-    btn8.pack(side=LEFT, padx=10)
+    btn8.pack(side=LEFT, padx=0)
 
     btn9 = Button(bf2, text='9', font=cour15, command=lambda:setInputText('9'))
     btn9.pack(side=LEFT)
@@ -360,16 +360,16 @@ def enter_pin():
     btn.pack(side=LEFT)
 
     btn0 = Button(bf1, text='0', font=cour15, command=lambda:setInputText('0'))
-    btn0.pack(side=LEFT, padx=10)
+    btn0.pack(side=LEFT, padx=0)
 
     btn_ = Button(bf1, text=' ', font=cour15)
     btn_.pack(side=LEFT)
 
     enter_btn = Button(bf0, text='ENTER', font=cour15,fg='green', command=option_func)
-    enter_btn.pack(side= LEFT, pady=10,padx=10)
+    enter_btn.pack(side= LEFT, pady=0,padx=0)
 
     exit_btn = Button(bf0, text='EXIT', font=cour15, fg='red', command=lambda:[enter_pin.new_win.destroy(), win.deiconify()])   # .deiconify() makes the associated window visible
-    exit_btn.pack(side=RIGHT, padx=10)
+    exit_btn.pack(side=RIGHT, padx=0)
 
     clear_btn = Button(bf0,text='CLEAR', font=cour15, fg='orange', command=text_delete)
     clear_btn.pack(side=LEFT)
@@ -380,7 +380,7 @@ def enter_pin():
 
 # main opening window
 title_label = Label(win, text='ATM', font=tim40, fg='red')              # Label is something similar to a label which displays text on the window
-title_label.pack(pady=10)                                               # pad y gives vertical distance both above and below where as pad x gives
+title_label.pack(pady=0)                                               # pad y gives vertical distance both above and below where as pad x gives
 
 #displaying some introduction
 user_id = random.randrange(1000,10000)
@@ -395,10 +395,10 @@ right_frame = Frame(win)
 right_frame.pack(side=RIGHT)
 
 note = Label(bottom_frame, text='NOTE:Use only EXIT button to exit', font=cour15, fg='red')
-note.pack(pady=10)
+note.pack(pady=0)
 saving = Button(right_frame, text='Savings', font=cour15, bg='sky blue', fg='red', command=enter_pin)
-saving.pack(padx=30, pady=10)
+saving.pack(padx=0, pady=0)
 current = Button(right_frame, text="Current", font=cour15, bg='sky blue', fg='red', command=enter_pin)
-current.pack(padx=30, pady=10)
+current.pack(padx=0, pady=0)
 
 win.mainloop()
