@@ -29,7 +29,7 @@ def display_func():
 
     message = Message(display_win, text='\n\nYour transaction has been successful\n\nThank you for using our', font=cour20, fg='blue')
     message.pack()
-    text = Label(display_win, text='MAYBANK', font=tim40, fg='red')
+    text = Label(display_win, text='MAYBANK', font=tim40, fg='black')
     text.pack()
 
     exit_button = Button(display_win, text='EXIT', font=cour15, fg='red', command=lambda: win.destroy())
@@ -151,7 +151,7 @@ def balance_func():
     balance = random.randrange(1000,1000000)
     message = Message(balance_win,text='\nYour transaction is successful\n\nAvailable Balance: '+str(balance)+'\n\nThank you for using our', font=cour20, fg='blue')
     message.pack()
-    text = Label(balance_win, text='MAYBANK', font=tim40, fg='red')
+    text = Label(balance_win, text='MAYBANK', font=tim40, fg='black')
     text.pack()
 
     exit_button = Button(balance_win, text='EXIT', font=cour15, fg='red', command=lambda: win.destroy())
@@ -167,7 +167,7 @@ def message_func():
 
     message = Message(win2, text='\nYour transaction is successful\n\nYour PIN has been successfully changed\n\nThank you for using our', font=cour20, fg='blue')
     message.pack()
-    text = Label(win2, text='MAYBANK', font=tim40, fg='red')
+    text = Label(win2, text='MAYBANK', font=tim40, fg='black')
     text.pack()
 
     exit_button = Button(win2, text='EXIT', font=cour15, fg='red', command=lambda: win.destroy())
